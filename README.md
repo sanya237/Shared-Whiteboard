@@ -57,22 +57,23 @@ Built as part of the *Distributed Systems & Applications* coursework at the Univ
 ### 1. Compile the project
 ```bash
 javac *.java
+
 2. Start the Manager (Server)
 bash
 Copy code
 java CreateWhiteBoard <serverIP> <port> <managerName>
 Example:
 
-bash
+```bash
 Copy code
 java CreateWhiteBoard localhost 5000 Manager1
 3. Start a Client
-bash
+```bash
 Copy code
 java JoinWhiteBoard <serverIP> <port> <username>
 Example:
 
-bash
+```bash
 Copy code
 java JoinWhiteBoard localhost 5000 Alice
 📂 Project Structure
