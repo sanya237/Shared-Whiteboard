@@ -50,36 +50,42 @@ Built as part of the *Distributed Systems & Applications* coursework at the Univ
 ### Kicked Client View  
 ![Kicked](images/kicked-client.png)
 
----
-
 ## 🛠 How to Run (Mac/Linux/Windows)
 
 ### 1. Compile the project
 ```bash
 javac *.java
+````
 
 ### 2. Start the Manager (Server)
-bash
-Copy code
-java CreateWhiteBoard <serverIP> <port> <managerName>
-Example:
 
 ```bash
-Copy code
+java CreateWhiteBoard <serverIP> <port> <managerName>
+```
+
+**Example:**
+
+```bash
 java CreateWhiteBoard localhost 5000 Manager1
+```
 
 ### 3. Start a Client
-```bash
-Copy code
-java JoinWhiteBoard <serverIP> <port> <username>
-Example:
 
 ```bash
-Copy code
+java JoinWhiteBoard <serverIP> <port> <username>
+```
+
+**Example:**
+
+```bash
 java JoinWhiteBoard localhost 5000 Alice
-📂 Project Structure
-arduino
-Copy code
+```
+
+---
+
+## 📂 Project Structure
+
+```text
 /src
    ├── CreateWhiteBoard.java
    ├── JoinWhiteBoard.java
@@ -90,25 +96,23 @@ Copy code
    └── ...
 /images
 README.md
+```
 
-##📡 System Design Overview
-Manager–Client architecture
 
-Java Sockets/RMI communication
+## 📡 System Design Overview
 
-Broadcast-based event propagation
+* Manager–Client architecture
+* Java Sockets/RMI communication
+* Broadcast-based event propagation
+* Multi-threaded request handling
+* Full board snapshot sent when a new client joins
 
-Multi-threaded request handling
-
-Full board snapshot sent when a new client joins
+---
 
 ## 🎯 Learning Outcomes
-Real-time distributed collaboration
 
-Message-based communication design
-
-Java GUI development (Swing/Java2D)
-
-Handling concurrency and user events
-
-Maintaining consistency across clients
+* Real-time distributed collaboration
+* Message-based communication design
+* Java GUI development (Swing/Java2D)
+* Handling concurrency and user events
+* Maintaining consistency across clients
