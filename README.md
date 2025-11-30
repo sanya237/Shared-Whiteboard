@@ -33,8 +33,6 @@ Built as part of the *Distributed Systems & Applications* coursework at the Univ
 
 ## 📸 Screenshots
 
-> Upload images to your GitHub repo → copy the link → replace below.
-
 ### Join Request  
 ![Join Request](images/join-request.png)
 
