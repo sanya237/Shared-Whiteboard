@@ -58,7 +58,7 @@ Built as part of the *Distributed Systems & Applications* coursework at the Univ
 ```bash
 javac *.java
 
-2. Start the Manager (Server)
+### 2. Start the Manager (Server)
 bash
 Copy code
 java CreateWhiteBoard <serverIP> <port> <managerName>
@@ -67,7 +67,8 @@ Example:
 ```bash
 Copy code
 java CreateWhiteBoard localhost 5000 Manager1
-3. Start a Client
+
+### 3. Start a Client
 ```bash
 Copy code
 java JoinWhiteBoard <serverIP> <port> <username>
@@ -89,7 +90,8 @@ Copy code
    └── ...
 /images
 README.md
-📡 System Design Overview
+
+##📡 System Design Overview
 Manager–Client architecture
 
 Java Sockets/RMI communication
@@ -100,7 +102,7 @@ Multi-threaded request handling
 
 Full board snapshot sent when a new client joins
 
-🎯 Learning Outcomes
+## 🎯 Learning Outcomes
 Real-time distributed collaboration
 
 Message-based communication design
